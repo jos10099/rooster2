@@ -2,7 +2,7 @@
 
 .reveiw-area {
     display: flex;
-    align-items: flex-start; /* Aligns children to the top */
+    align-items: flex-start; 
     min-height: 300px;
     padding: 2% 15%;
     color: rgb(40, 39, 39);
@@ -12,7 +12,7 @@
 .right-side-content {
     flex: 1;
     padding-right: 50px;
-    margin-top: 12%;  /* Add this to move the entire content down */
+    margin-top: 12%;  
 }
 
 
@@ -41,7 +41,7 @@
 
 .carousel-slide {
     display: none;
-    text-align: center; /* Center the text */
+    text-align: center; 
 }
 
 .carousel-slide.active {
@@ -51,7 +51,7 @@
 .carousel-controls .prev, .carousel-controls .next {
     position: absolute;
     top: 50%;
-    transform: translateY(-50%); /* Center the arrows vertically */
+    transform: translateY(-50%); 
     background: none;
     border: none;
     font-size: 24px;
@@ -70,9 +70,9 @@
     color: purple;
 }
 
-/* Optional: Add some hover effects for better UX */
+
 .carousel-controls .prev:hover i, .carousel-controls .next:hover i {
-    color: darkpurple; /* Ensure you have a valid color or use a different shade of purple like #800080 */
+    color: darkpurple; 
 }
 
 .indicator {
@@ -91,7 +91,7 @@
 .carousel-controls {
     display: flex;
     justify-content: center; 
-      align-items: center;
+    align-items: center;
     margin-top: 20px;
 }
 

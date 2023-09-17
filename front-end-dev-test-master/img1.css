@@ -48,5 +48,5 @@
 .text-left p::before {
     content: "";
     display: inline-block;
-    width: calc(20% - width-of-L); /* Remember to replace 'width-of-L' with an appropriate value */
+    width: calc(20% - width-of-L); 
 }
