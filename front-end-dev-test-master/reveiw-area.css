@@ -1,0 +1,105 @@
+/* review-area.css */
+
+.reveiw-area {
+    display: flex;
+    align-items: flex-start; /* Aligns children to the top */
+    min-height: 300px;
+    padding: 2% 15%;
+    color: rgb(40, 39, 39);
+    font-family: 'Roboto', sans-serif;
+}
+
+.right-side-content {
+    flex: 1;
+    padding-right: 50px;
+    margin-top: 12%;  /* Add this to move the entire content down */
+}
+
+
+.reveiw-area h1 {
+    text-align: left;
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+
+.reveiw-area .star-rating {
+    display: flex;
+    gap: 5px;
+}
+
+.reveiw-area .star-rating i {
+    color: rgb(232, 112, 48);
+    font-size: 24px;
+}
+
+.carousel {
+    position: relative;
+    flex: 0.7;
+    margin-top: 12%;
+    padding-left: 30px;
+}
+
+.carousel-slide {
+    display: none;
+    text-align: center; /* Center the text */
+}
+
+.carousel-slide.active {
+    display: block;
+}
+
+.carousel-controls .prev, .carousel-controls .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%); /* Center the arrows vertically */
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.carousel-controls .prev {
+    left: -40px;
+}
+
+.carousel-controls .next {
+    right: -40px;
+}
+
+.carousel-controls .prev i, .carousel-controls .next i {
+    color: purple;
+}
+
+/* Optional: Add some hover effects for better UX */
+.carousel-controls .prev:hover i, .carousel-controls .next:hover i {
+    color: darkpurple; /* Ensure you have a valid color or use a different shade of purple like #800080 */
+}
+
+.indicator {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: lightgray;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.indicator.active {
+    background-color: orange;
+}
+.carousel-controls {
+    display: flex;
+    justify-content: center; 
+      align-items: center;
+    margin-top: 20px;
+}
+
+.reviewer-name, .review-date {
+    color: purple;
+    font-weight: bold;
+}
+
+
+
+

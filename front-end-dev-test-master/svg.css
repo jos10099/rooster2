@@ -1,0 +1,120 @@
+.split-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+    overflow: hidden; 
+}
+
+.split-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    background: linear-gradient(90deg, #ffffff 50%, rgb(234, 232, 232) 50%);
+    height: 100%; 
+}
+
+
+.left-content {
+    flex: 0 1 25%;  
+    padding-right: 20px;
+    padding-left: 3%;
+    margin-top: 10%;
+    margin-left: 51px;
+}
+
+.left-content p {
+    line-height: 1.5;
+    margin-bottom: 20px;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(40, 39, 39);
+}
+
+.left-content h1 {
+    color: rgb(0, 0, 0);
+    font-family: 'Roboto', sans-serif;
+    color: rgb(71, 69, 69);
+}
+
+.svg-container {
+    flex: 0 1 45%;  
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 100px;
+    margin-top: 35%;
+    margin-right: 0;
+    margin-left: 25%;
+   
+}
+
+.svg-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid purple;
+    border-radius: 50%;
+    width: 135px;
+    height: 135px;
+    position: relative;
+    
+}
+
+.svg-item img {
+    width: 85px;
+    bottom: -30%;
+}
+
+.svg-item p {
+    position: absolute;
+    bottom: -65px;
+    text-align: center;
+    width: 100%;
+    font-weight: bold;
+}
+
+.svg-item:hover {
+    border-color: #ff6600; 
+    background-color: rgba(255, 102, 0, 0.1); 
+}
+
+.svg-item:hover img {
+    transform: scale(1.1); 
+}
+
+.svg-item, .svg-item img {
+    transition: all 0.3s ease; 
+    font-family: 'Roboto', sans-serif;
+    color: rgb(71, 69, 69);
+    
+}
+
+.banner-container::after,
+.svg-container::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+
+
+@media (max-width: 768px) {
+    .left-content, .svg-container {
+        flex: 0 1 calc(50% - 20px);  
+    }
+
+    .svg-item {
+        width: 100px;  
+        height: 100px;
+    }
+
+    .svg-item img {
+        width: 70px;  
+    }
+}

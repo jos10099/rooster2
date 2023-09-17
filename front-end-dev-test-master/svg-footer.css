@@ -1,0 +1,39 @@
+.svg-footer {
+    background-color: #f0f0f0; 
+    text-align: center; 
+    padding: 20px 0; 
+    position: relative;
+    bottom: 0;
+    width: 100%; 
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+.svg-footer p {
+    margin-bottom: 10px;
+}
+
+.svg-button {
+    display: inline-block;
+    margin-right: 10px; 
+    transition: transform 0.3s ease, filter 0.3s ease; 
+    cursor: pointer; 
+    padding: 10px; 
+    border: 1px solid transparent; 
+    border-radius: 5px; 
+}
+
+.svg-button img {
+    width: 50px; 
+    height: 50px;
+}
+
+
+.svg-button:hover {
+    transform: scale(1.05);
+    filter: brightness(1.2); 
+    border-color: #e0e0e0; 
+}
+
+.svg-footer p{
+    font-weight: bold;
+}

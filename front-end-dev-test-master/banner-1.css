@@ -1,0 +1,45 @@
+
+.banner-container {
+    position: relative;
+    
+}
+
+
+.banner-image {
+    margin: 0;
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+
+.lorem {
+    position: absolute;
+    top: 39%; 
+    left: 20%; 
+    z-index: 10; 
+}
+
+.lorem h1 {
+    font-family: 'Roboto', sans-serif;
+    color: purple;
+    margin: 0; 
+    padding: 10px; 
+}
+
+.custom-button {
+    background-color: rgb(232, 112, 48); 
+    color: #fff; 
+    border: none;
+    padding: 10px 20px; 
+    margin-top: 10px; 
+    cursor: pointer; 
+    border-radius: 5px; 
+    font-size: 16px; 
+    transition: background-color 0.3s; 
+}
+
+.custom-button:hover {
+    background-color: #e85c32;
+}

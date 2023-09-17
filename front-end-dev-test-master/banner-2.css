@@ -1,0 +1,56 @@
+.banner2-container {
+    position: relative;
+    width: 100%; 
+    height: 500px;;
+    
+}
+
+.banner2-text {
+    position: absolute;
+    top: 50%; 
+    left: 75%;
+    transform: translate(-50%, -50%);
+    color: purple;
+    text-align: center;
+    max-width: 30%;
+    font-size: larger;
+     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.banner2-text h1 {
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 0;  
+}
+
+.banner2-text p {
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    margin-left: 0; 
+}
+
+
+
+.banner-image {
+    width: 100%; 
+    display: block; 
+}
+
+.orange-button {
+    background-color: rgb(232, 112, 48);
+    color: #fff; 
+    border: none; 
+    padding: 10px 20px; 
+    margin-top: 10px; 
+    cursor: pointer; 
+    border-radius: 5px; 
+    font-size: 16px; 
+    transition: background-color 0.3s;  
+}
+
+.orange-button:hover {
+    background-color: #e85c32; 
+}
