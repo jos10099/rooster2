@@ -4,7 +4,7 @@
     align-items: center;
     padding: 20px;
     position: relative;
-    overflow: hidden; 
+    overflow: scroll; 
 }
 
 .split-section::before {
@@ -18,7 +18,6 @@
     background: linear-gradient(90deg, #ffffff 50%, rgb(234, 232, 232) 50%);
     height: 100%; 
 }
-
 
 .left-content {
     flex: 0 1 25%;  
@@ -49,7 +48,6 @@
     margin-top: 35%;
     margin-right: 0;
     margin-left: 25%;
-   
 }
 
 .svg-item {
@@ -62,7 +60,6 @@
     width: 135px;
     height: 135px;
     position: relative;
-    
 }
 
 .svg-item img {
@@ -91,7 +88,6 @@
     transition: all 0.3s ease; 
     font-family: 'Roboto', sans-serif;
     color: rgb(71, 69, 69);
-    
 }
 
 .banner-container::after,
@@ -101,20 +97,34 @@
     clear: both;
 }
 
-
-
-
 @media (max-width: 768px) {
+    .split-section {
+        flex-direction: column; /* Stack the children vertically */
+    }
+
     .left-content, .svg-container {
-        flex: 0 1 calc(50% - 20px);  
+        flex: 0 1 100%; /* Each child will now take 100% width of parent */
+        padding: 10px 0; /* Add some padding to space them out */
+        margin: 0; /* Reset margin to avoid unnecessary spacing */
+    }
+
+    .left-content {
+        order: 1; /* Ensures the left content is displayed above */
+    }
+
+    .svg-container {
+        order: 2; /* Ensures the SVGs are displayed below */
+        display: flex; /* Switch to flex for better control on mobile */
+        flex-wrap: wrap; /* Allow wrapping of items */
+        justify-content: center; /* Center the SVG items */
     }
 
     .svg-item {
-        width: 100px;  
-        height: 100px;
+        flex: 0 0 calc(50% - 10px); /* Each SVG item will take 50% width of its parent, minus a little bit for padding */
+        margin: 5px; /* Spacing between each item */
     }
 
     .svg-item img {
-        width: 70px;  
+        width: 50px; /* Adjust the image width for mobile */
     }
 }
