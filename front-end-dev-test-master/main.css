@@ -4,6 +4,11 @@ html, body {
     overflow-x: hidden;
 }
 
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+
 .logo-container {
     position: absolute;
     top: 20px;
@@ -113,6 +118,12 @@ html, body {
         height: 25px;
         margin-top: 1%;
     }
+    .logo-container img {
+        width: 150px;
+        height: auto;
+        position:relative;
+    }
+    
 }
 
 .main-container {
@@ -120,4 +131,31 @@ html, body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.logo-container {
+    animation: fadeIn 1s 0.5s forwards; 
+}
+
+.centered-text {
+    animation: fadeIn 1s 1s forwards; 
+}
+
+.stand-text {
+    animation: fadeIn 1s 1.5s forwards; 
+}
+
+.btn-primary {
+    animation: fadeIn 1s 2s forwards; 
+}
+.logo-container, .centered-text, .stand-text, .btn-primary {
+    opacity: 0;
 }
