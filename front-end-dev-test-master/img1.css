@@ -66,8 +66,7 @@
 @media (max-width: 768px) {
     .lorem-container {
         flex-direction: column;
-        background: linear-gradient(to right, #f8bfa0, #ceb6fc); /* Updated this line for the gradient */
-        padding: 20px;
+        background: linear-gradient(to right, #f8bfa0, #ceb6fc); 
     }
 
     .text-left, .img1-container {
