@@ -65,7 +65,8 @@
         font-size: small; 
         font-weight: bold;
         color: darkviolet;
-        background-color: #fbe8ffba;
+        background: linear-gradient(to right, #ce9cfac9, rgba(244, 172, 146, 0.675));
+
         border-radius: 15px; 
         padding: 20px; 
         box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); 

@@ -20,6 +20,7 @@
 }
 
 .left-content {
+   
     flex: 0 1 25%;  
     padding-right: 20px;
     padding-left: 3%;
@@ -108,7 +109,7 @@
         margin-left: 0;
         margin-top: 0;
         padding: 25px; 
-        background-color: #d2b5eae6; 
+        background: linear-gradient(to right, #f8bfa0, #ceb6fc);
         text-align: center;
         transition: transform 0.3s, box-shadow 0.3s; 
         border-radius: 6px; 

@@ -1,6 +1,7 @@
 html, body {
     margin: 0;
     padding: 0;
+    overflow: visible;
     
 }
 
@@ -158,4 +159,49 @@ html, body {
 }
 .logo-container, .centered-text, .stand-text, .btn-primary {
     opacity: 0;
+}
+
+
+::-webkit-scrollbar {
+    width: 10px;  
+}
+
+
+::-webkit-scrollbar-thumb {
+    background: #ad5ae5;  
+    border-radius: 5px;  
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+    background: #a06ccd;  
+}
+
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+    border-radius: 5px;  
+}
+
+
+::-webkit-scrollbar-button {
+    display: none;  
+}
+
+
+body {
+    scrollbar-width: thin;
+    scrollbar-color: #8a55ed #c254e0;
+   
+}
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }

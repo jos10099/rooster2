@@ -1,5 +1,5 @@
 .svg-footer {
-    background-color: #f0f0f0; 
+    
     text-align: center; 
     padding: 20px 0; 
     position: relative;
@@ -37,3 +37,7 @@
 .svg-footer p{
     font-weight: bold;
 }
+@media (max-width: 768px) {
+    .svg-footer{
+background: linear-gradient(rgba(255, 123, 83, 0.521),rgba(201, 131, 245, 0.406)); 
+}}

@@ -35,6 +35,7 @@
     text-align: center;
     height: 100%;
     margin-left: 51px;
+    
 }
 
 .text-left h1 {
@@ -65,7 +66,7 @@
 @media (max-width: 768px) {
     .lorem-container {
         flex-direction: column;
-        background: #f4f4f4;
+        background: linear-gradient(to right, #f8bfa0, #ceb6fc); /* Updated this line for the gradient */
         padding: 20px;
     }
 

@@ -3,7 +3,7 @@
 .reveiw-area {
     display: flex;
     align-items: flex-start; 
-    min-height: 300px;
+    min-height: 280px;
     padding: 2% 15%;
     color: rgb(40, 39, 39);
     font-family: 'Roboto', sans-serif;
